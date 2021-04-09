@@ -1,9 +1,383 @@
 *{
     margin: 0;
-    padding: 0;
-    margin: 0;
     padding:0;
     font-family: 'Raleway', sans-serif;
     color: black; 
     font-size: 18px;
+   
+}/*******
+generalité******/
+
+li,a{
+    list-style-type: none;
+    text-decoration: none;
 }
+h1 {
+    font-size: 27px;
+    font-weight: bolder;
+    margin: 10px 0 10px 0 ;
+}
+h2 {
+    margin: 10px;
+}
+p{
+    color: gray;
+}
+.fas.fa-star{
+    font-size: 13px;
+    color:#0065FC;
+}
+/********* header
+***********/
+nav{
+    
+    position: relative;       
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+#imglogo{   
+    max-width: 55px;
+    max-height: 40px;   
+}
+#navig{
+    
+    
+    border-top: none;
+    padding-top: 1em;    
+    width: 400px;          
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+#hégactiv{ 
+    width: 250px;
+    border-top: 2px solid transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+#overhebergement{   
+    border-top: 2px solid #0065fc;
+    padding-top: 1em;
+        
+}
+
+/*********
+form**********/
+
+#form{
+    padding:10px 0 0 0;
+}
+#inputicone{  
+    margin: 10px 0 10px 0;         
+    position : relative; 
+    display: flex;  
+    flex-direction: row;       
+}
+.fas.fa-map-marker-alt {    
+    width: 40px;
+    padding: 10px;    
+    text-align: center;
+    background-color: #f2f2f2;     
+    border-radius:20% 0  0 20%;
+}
+button{ 
+    padding: 10px;
+    border:none;
+    outline: none;    
+    background-color: #0065FC;
+    color: white;    
+    text-align: center;
+    border-radius: 0% 20% 20% 0%;
+}
+input{
+    padding: 10px;
+    border:none;
+    outline: none;       
+    text-align: justify;      
+}
+
+ /*************
+filtres
+ ********************/
+#cinqli{
+    width: 65%;
+    height: auto;
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+.filtres{ 
+    border-bottom: 2px solid #0065fc;
+    
+    width: 350px;
+    height:38px ;
+    margin-right: 10px;
+    border: 1px solid #f2f2f2;
+    position : relative;
+    border-radius: 4em;  
+      
+                
+}
+
+.fas.fa-child ,.fas.fa-heart,.fas.fa-dog {        
+    border: 1px solid #f2f2f2;
+    border-radius: 4em ;
+    width: 40px;
+    height: 36px;
+    display: inline-block;      
+    color: #0065FC;       
+    text-align: center;
+    background-color: #f2f2f2; 
+    
+}
+form a{       
+    font-size: 14px; 
+    font-weight: 900;   
+    text-transform: capitalize;   
+    text-align: justify;
+    padding-left: 1em;
+} 
+
+
+/********************
+body
+********************/
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#Hébergement{
+    background-color:#f2f2f2;
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+}
+#contheberg{     
+    border-radius: 2em;     
+    height: 90%;   
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    align-items: center;
+    align-content:space-around;
+}
+
+.prés{        
+    width: 250px;
+    height: 280px;               
+    background-color:white;    
+    border-radius: 20px;
+    text-align: center; 
+    padding: 10px; 
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);     
+}
+.prés:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+.plus:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.img_hébergement{       
+    position:relative;
+    width: 95%;
+    height: 200px;   
+    border-radius: 20px 20px 0 0;
+}
+
+/***********
+populaire
+***********/
+
+#populaire{     
+    width: 400px;        
+    background-color:#f2f2f2;   
+    border-radius: 2em;    
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;   
+   
+}
+
+#tete{
+    
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.plus{ 
+    position: relative;
+    width: 350px;
+    height: 200px;      
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 2em; 
+    background-color:white; 
+    display: flex; 
+    flex-direction: row;  
+    justify-content: space-between;
+       
+} 
+.adroit{
+    margin-left: 10px;
+
+}
+.imgpopulaire{
+    width: 180px; 
+    height: 200px;
+    border-radius: 20px 0 0 20px; 
+ }
+/*****************
+activités******************/
+
+#activités{          
+    width:100%; 
+    margin: 20px;        
+}
+
+#tout{
+    width: 100%;      
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.photos{  
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);  
+    background-color: white;
+    width: 20%;
+    height: auto  
+}
+.photos:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.img_activitésolo{    
+    width: 100%;
+    height: 90%;   
+    border-radius: 20px 20px 0 0;
+}
+
+.inter1{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.img_activpartagé1{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;  
+} 
+.inter2{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.img_activpartagé2{
+    width: 100%;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+}   
+
+
+
+
+
+
+
+    
+
+
+/***************
+footer
+**************/
+footer{   
+    width: 100%;  
+    height: 400px; 
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;        
+}
+footer a{
+    color:dimgray;
+}
+.pied{
+    display: block; 
+}  
+.fin{
+    padding-right: 18%;
+    padding-top: 20px;
+}
+
+
+
+
+/*@media screen and (min-width: 768px) and (max-width: 991px) 
+{
+    nav{
+        flex-direction: column;
+    }
+    
+    #hégactiv{         
+        align-items: flex-end;  
+        
+    }
+    #overhebergement{
+        border-top:none;
+        border-bottom: 2px solid #0065fc;
+        padding-bottom: 1em;
+    }
+    #populaire{
+        order: 1;
+    }
+
+            
+    
+    #body{
+        flex-direction: column;
+    }
+    #contheberg{
+        flex-wrap: none;        
+    }
+    
+    #tout{         
+        flex-direction:column ;        
+    }
+    footer{
+        flex-direction: column;
+    }*/
+    
+        
+    
+
+
+
+
+
+/*@media all and (max-width: 768px) */
+
+
+
+
+
+
+
