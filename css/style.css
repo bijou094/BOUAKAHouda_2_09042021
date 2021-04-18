@@ -5,7 +5,8 @@
     color: black; 
     font-size: 18px;
    
-}/*******
+}
+/*******
 generalité******/
 
 li,a{
@@ -183,10 +184,12 @@ body{
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);     
 }
 .prés:hover{
+    transition: 0.2s;
     transform: scale(1.2);
     z-index: 2;
 }
 .plus:hover{
+    transition: 0.2s;
     transform: scale(1.2);
     z-index: 2;
 }
@@ -265,6 +268,7 @@ activités******************/
     height: auto  
 }
 .photos:hover{
+    transition: 0.2s;
     transform: scale(1.2);
     z-index: 2;
 }
