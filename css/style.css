@@ -7,18 +7,18 @@ h2{ font-size: 18px;}
 h3{margin: 0;}
 h4{font-size: 15px;font-weight: bold;text-transform: capitalize;color: black;}
 
-/*header*******************************************************/
-header{margin:auto;}
+/*header*******************************************************/ 
+header{padding:20px;}
+nav{display: flex;flex-direction:row;justify-content:space-between;align-items: center;  }
+#logo{ height: 50px;height: 50px; justify-self: flex-start;align-self: flex-start;  margin-left: 0;}
 
-/**********nav******/
-nav{display: flex;flex-direction:row;justify-content:space-between;padding: 20px 20px 0 20px;}
-#img_logo{ height: 50px;height: 50px; }
-#three_nav{ width: 400px; display: flex;flex-direction: row; justify-content:space-around;}
-#nav_activites{color:black;}
-#nav_hebergement{border-top: 3px solid #0065fc;padding-top: 1em;}
-nav a:hover{
+#two_nav{width: 400px;margin-left: 55%; display: flex;flex-direction: row; justify-content:space-between;align-items: center;}
+#nav_activa{color:black;}
+#nav_activites{padding-top: 20px;}
+#nav_hebergement{border-top: 3px solid #0065fc; padding-top: 20px; width: 150px;text-align: center; }
+#nav_sinscrire{justify-self: flex-end; margin-left: 50px;padding: 20px 20px 0 0;}
+nav a:focus{
     text-decoration:underline blue;
-    color:slateblue;
 }
 /************le input******************/
 
@@ -135,10 +135,11 @@ footer a{color:dimgray; ;}
 
 
 @media screen and (min-width:768px) and (max-width: 991px){      
-    nav{height:100px; flex-direction: column;flex-wrap: wrap;}
-    #three_nav{align-self: flex-start;}
-    #nav_sinscrire:nth-child(3){height: auto; align-self: flex-start; align-items: flex-start;}
-    #nav_hebergement{border-bottom: 3px solid #0065fc;padding-top: 1em; border-top: none;}
+    nav{width: 100%; height: 135px; display: flex;flex-direction: column;flex-wrap: wrap;justify-content: flex-start;}
+    #two_nav{ margin-left: 0; width: 100%; border-bottom: 3px solid #f2f2f2; display: flex;flex-direction: row;justify-content: flex-start;}
+   
+    #nav_hebergement{border-top:none; border-bottom: 3px solid #0065fc;padding-bottom:17px; margin:0  100px 0 30px;}
+    #img_logo{margin-left:0;}
 
    /*********les filtres*******/
    #block{flex-direction: column;align-items: flex-start;}   
@@ -195,10 +196,11 @@ footer a{color:dimgray; ;}
 
 @media screen and (max-width:768px)
 {
-    nav{  height:120px;flex-direction: column;flex-wrap: wrap; align-content: flex-start;}
-    #three_nav{align-items: flex-start;}
-    #nav_sinscrire:nth-child(3){height: auto; align-self: flex-start;align-items: flex-start;}
-    #nav_hebergement{border-bottom: 3px solid #0065fc;padding-top: 1em; border-top: none;}
+    nav{width: 100%; height: 150px; display: flex;flex-direction: column;flex-wrap: wrap;justify-content: flex-start;}
+
+    #two_nav{width: 100%; border-bottom: 3px solid #f2f2f2;margin-left: 0;padding-left: 0; display: flex;flex-direction: row;justify-content: flex-start;}
+    #nav_sinscrire{margin-right: 50px;}
+    #nav_hebergement{border-top:none; border-bottom: 3px solid #0065fc;padding-bottom:20px; margin:0  100px 0 30px;}
 
    /*********les filtres*******/
    #block{flex-direction: column;align-items: flex-start;justify-content: space-between; }
