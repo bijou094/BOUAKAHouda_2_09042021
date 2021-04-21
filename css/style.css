@@ -98,7 +98,7 @@ footer a{color:dimgray; ;}
     main{ padding: 20px; display: flex; flex-direction: row;flex-wrap: wrap;justify-content:space-evenly;}
     .etoile-bleu {font-size: 10px;}
     .etoile-gris{font-size: 10px;}
-    main h3 {font-size: 14px; margin: 0;}
+    main h3 {font-size: 13px; margin: 0;}
     main p{font-size: 12px; margin: 0;}
     #contheberg{ border-radius: 2em;display: flex;flex-direction:row;flex-wrap: wrap;}
     .carte_hebergement{ width:190px;height: 170px;padding: 5px;}
