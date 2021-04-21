@@ -150,7 +150,7 @@ footer a{color:dimgray; ;}
     /***************************************/
 
 
-    
+    main {display: flex; flex-direction: row;flex-wrap: wrap;justify-content:space-evenly;}
     .etoile-bleu {font-size: 10px;}
     .etoile-gris{font-size: 10px;}
     main h3 {font-size: 14px; margin: 0px;}
