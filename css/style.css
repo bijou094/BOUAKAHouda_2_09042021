@@ -5,7 +5,6 @@ p{color:grey;}
 h1{margin:auto;padding-left: 20px; font-size: 27px;font-weight: bold;}
 h2{ font-size: 18px;}
 h3{margin: 0;}
-h4{font-size: 15px;font-weight: bold;text-transform: capitalize;color: black;}
 
 /*header*******************************************************/ 
 header{padding:20px;}
@@ -57,7 +56,7 @@ main{ padding: 10px; display: flex; flex-direction: row;flex-wrap: wrap;justify-
 #afficher{margin:10px 0 25px 20px; color: black;}
 #afficher a{color: black;  font-weight: 600;}
 .nom_prix{align-self: flex-start;}
-.star{align-self: flex-end;}
+.star{align-self: flex-start;}
 
 
 #populaire{min-width: 34%; padding: 10px;background-color:#f2f2f2;border-radius: 20px 20px 20px 20px;display: flex;flex-direction: column;justify-content: space-evenly;}
@@ -66,7 +65,9 @@ main{ padding: 10px; display: flex; flex-direction: row;flex-wrap: wrap;justify-
 .img_populaire{ width: 190px;height: 140px;border-radius: 20px 0 0 20px ;}
 #tete{margin: 0; display: flex;flex-direction: row;justify-content: space-between;}
 .fa-chart-line{font-size: 16px; font-weight:900;padding: 20px 20px 0 0;}
-.adroit{margin: 0  0 10px 10px;display: flex;flex-direction: column;}
+.adroit{ height: auto; margin: 0  0 10px 10px;display: flex;flex-direction: column;justify-content: space-between;}
+.adroit .nom_prix{align-self: flex-start;justify-self: flex-start;}
+.adroit .star{align-self: flex-start;}
 
 #populaire .star:nth-child(2){margin-top: 10px;}
 /******************activités**********************************/
@@ -86,8 +87,9 @@ main{ padding: 10px; display: flex; flex-direction: row;flex-wrap: wrap;justify-
 /****************************footer************************/
 
 footer{width: 100vw; padding:20px  100px 20px 0;   background-color:#f2f2f2;display: flex;flex-direction: row;justify-content: space-between;}
+h4{font-size: 15px;font-weight: bold;padding-left: 15px; text-transform: capitalize;color: black;}
 footer a{color:dimgray; ;}
-.pied{ width: 300px; padding-left:5px;}
+.pied{ width: 300px; padding-left:5px; margin: 10px;}
 .fin{padding-left: 0;}
 
 
@@ -96,39 +98,38 @@ footer a{color:dimgray; ;}
 @media screen and (min-width: 991px) and (max-width:1238px){ 
 
     main{ padding: 20px; display: flex; flex-direction: row;flex-wrap: wrap;justify-content:space-evenly;}
+    main h2{font-size: 16px ; margin: 20px;}
     .etoile-bleu {font-size: 10px;}
     .etoile-gris{font-size: 10px;}
     main h3 {font-size: 13px; margin: 0;}
     main p{font-size: 12px; margin: 0;}
-    #contheberg{ border-radius: 2em;display: flex;flex-direction:row;flex-wrap: wrap;}
+
+    #contheberg{ padding: 10px; border-radius: 2em;display: flex;flex-direction:row;flex-wrap: wrap; justify-content: space-around;}
     .carte_hebergement{ width:190px;height: 170px;padding: 5px;}
     .img_hebergement{  width: 180px;height: 90px;}
     .dessous{ height:170px; margin:10px 0 0 15px;text-align: left;}
-    .nom_prix{align-items: flex-start; margin: 0;}
-    .carte_populaire .star{align-items: flex-end;}
-    
-
-    
+       
+    /*******
+    Section populaire****/    
     #populaire{ padding: 10px; align-items: center;}
+
     .carte_populaire{ width:270px;height: 130px;} 
     .img_populaire{  width:130px;height: 120px;}
-    #tete{display: flex;flex-direction: row;justify-content: space-between;}
-    .fa-chart-line{font-size: 10px; font-weight:900;padding: 10px 20px 0 0;}
-    .adroit{display: flex;flex-direction: column;}
-    
-    
-
-    .photos{width: 225px;height: 350px;} 
-    
-    #Activites h2 {margin-left: 15px;}
-    
+    #populaire h2{font-size: 14px;}
+    #tete{width: 100%;padding: 15px; display: flex;flex-direction: row;justify-content: space-between;}
+    .fa-chart-line{font-size: 14px; font-weight:900;padding: 15px 10px 0 0;}
+    .adroit{display: flex;flex-direction: column;}    
+    /******
+    Section Activités******/
+    #Activites{ width: 100%;}
+    #tout{display: flex;flex-direction: row;justify-content: space-between;}
+    .photos{width: 210px;height: 350px;}     
+    #Activites h2 {margin-left: 15px;}    
     #Activites h3{font-size:14px; font-weight: 700; margin-left: 15px;}
-    .img_activitesolo{ width: 225px; height:300px;}
-
-    .partager{ width: 225px;height: 350px;}
-
-    .inter{width: 225px; height: 160px;margin-bottom: 10px;}
-    .img_activepartage{width: 225px; height: 120px; } 
+    .img_activitesolo{ width: 210px; height:300px;}
+    .partager{ width: 210px;height: 350px;}
+    .inter{width: 210px; height: 160px;margin-bottom: 10px;}
+    .img_activepartage{width: 210px; height: 120px;} 
 }
 
 
@@ -175,21 +176,20 @@ footer a{color:dimgray; ;}
     
 
     
-    #Activites{padding-left: 0;}
-    #tout{padding:20px ; width:auto; height: auto;flex-direction: row; flex-wrap: wrap;justify-content:left;}
+    #Activites{width: 100%;;padding: 20px; }
+    #tout{height:50%; margin-top:10px;padding-top: 0 ;flex; flex-direction: column; flex-wrap: wrap;align-content:flex-start; justify-content: space-between;}
     #Activites h3{font-size:14px; font-weight: 700; }
 
-    .photos{max-width: 280px; height: 250px; margin: 23px;}
-    .img_activitesolo{width: 280px;  height:200px;}
+    .photos{width: 350px;height: 300px;margin:10px; }
+    .img_activitesolo {width: 350px;  height:250px;}
 
-    .partager{margin: 25px;max-width: 290px; height: 250px; display:flex;flex-direction: row; justify-content: space-between;}
+    .partager{ width: 350px; height: 600px;margin:10px;display:flex;flex-direction: column; justify-content: space-between;}
 
-    .inter{width: 280px; height: 250px;margin: 0 20px 0 0;}
-    .img_activepartage{ width: 280px;height: 200px; } 
+    .inter{width: 350px;height: 300px;margin: 10px;}
+    .img_activepartage{ width:350px;height: 250px; }
 
 
-
-    footer{width: 100vw;}
+    footer{width:100%}
 }
 
 
