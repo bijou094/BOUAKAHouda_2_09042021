@@ -71,16 +71,16 @@ main{ padding: 10px; display: flex; flex-direction: row;flex-wrap: wrap;justify-
 #populaire .star:nth-child(2){margin-top: 10px;}
 /******************activités**********************************/
 
-#Activites{ padding: 20px;height:auto;}
+#Activites{ padding: 40px;height:auto;}
 #tout{display: flex;flex-direction: row;justify-content: space-between;}
-.photos{width: 290px;height: 380px; box-shadow: 1px  1px  1px 1px rgb(179, 175, 175);background-color:white;border-radius: 20px 20px 20px 20px;}
+.photos{width: 280px;height: 370px; box-shadow: 1px  1px  1px 1px rgb(179, 175, 175);background-color:white;border-radius: 20px 20px 20px 20px;}
 #Activites h3{margin: 10px ; font-size: 16px;}
-.img_activitesolo{width: 290px;  height: 320px;border-radius: 20px 20px 0 0;}
+.img_activitesolo{width: 280px;  height: 320px;border-radius: 20px 20px 0 0;}
 
-.partager{ width: 290px;height: 380px;display: flex;flex-direction: column;justify-content: space-between;background-color:white;border-radius: 20px 20px 20px 20px;}
+.partager{ width: 280px;height: 370px;display: flex;flex-direction: column;justify-content: space-between;background-color:white;border-radius: 20px 20px 20px 20px;}
 
-.inter{width: 290px; height: 180px;margin-bottom : 30px; padding-bottom:10px; box-shadow: 1px  1px  1px 1px rgb(179, 175, 175);background-color: white; background-color:white;border-radius: 20px 20px 20px 20px;}
-.img_activepartage{width: 290px; height: 120px;border-radius: 20px 20px 0 0;} 
+.inter{width: 280px; height: 170px;margin-bottom : 30px; padding-bottom:10px; box-shadow: 1px  1px  1px 1px rgb(179, 175, 175);background-color: white; background-color:white;border-radius: 20px 20px 20px 20px;}
+.img_activepartage{width: 280px; height: 110px;border-radius: 20px 20px 0 0;} 
 
 
 /****************************footer************************/
