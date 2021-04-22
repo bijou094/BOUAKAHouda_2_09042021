@@ -89,7 +89,7 @@ main{ padding: 10px; display: flex; flex-direction: row;flex-wrap: wrap;justify-
 footer{width: 100%; padding:20px  100px 20px 0;   background-color:#f2f2f2;display: flex;flex-direction: row;justify-content: space-between;}
 h4{font-size: 15px;font-weight: bold;padding-left: 15px; text-transform: capitalize;color: black;}
 footer a{color:dimgray; ;}
-.pied{ width: 300px; padding-left:5px; margin: 10px;}
+.pied{ width: 280px; padding-left:5px; margin: 10px;}
 .fin{padding-left: 0;}
 
 
@@ -140,7 +140,7 @@ footer a{color:dimgray; ;}
     #two_nav{ margin-left: 0; width: 100%; border-bottom: 3px solid #f2f2f2; display: flex;flex-direction: row;justify-content: flex-start;}   
     #nav_hebergement{border-top:none; border-bottom: 3px solid #0065fc;padding-bottom:17px; margin:0  100px 0 30px;}
     #img_logo{margin-left:0;}
-
+    
    /*********les filtres*******/
    #block{flex-direction: column;align-items: flex-start;}   
    #filtres{height: 100px;flex-direction:column;flex-wrap: wrap; justify-content: space-between;padding-left: 0; margin-left: 0;}
@@ -158,15 +158,15 @@ footer a{color:dimgray; ;}
     #Hebergement h2{font-size: 15px; margin-top: 20px; padding: 20px;}
     main p{font-size: 12px; margin: 0;}  
     #Hebergement{width: 64%;}   
-    .carte_hebergement{ width:220px;height: 180px;}
-    .img_hebergement{  width: 210px;height: 110px;}   
+    .carte_hebergement{ width:210px;height: 180px;}
+    .img_hebergement{  width: 200px;height: 110px;}   
 
     
-     #populaire{width: 30%;padding: 5px; display: flex;flex-direction: column;justify-content: space-evenly; align-items: center;}
-    .carte_populaire{width:250px;height: 140px;margin-top: 0;}   
+    #populaire{width: 30%;padding: 5px; display: flex;flex-direction: column;justify-content: space-around; align-items: center;}
+    .carte_populaire{width:250px;height: 140px;}   
     .img_populaire{ width: 110px;height: 130px;}
     .fa-chart-line{ margin-top: 5px;padding-top: 3px ;padding-right: 0;}
-    #tete{width:250px;}
+    #tete{width:250px;margin-top: 5px;}
     h2{font-size: 15px; }
     
 
@@ -181,7 +181,7 @@ footer a{color:dimgray; ;}
     .img_activepartage{ width:350px;height: 200px; }
 
 
-    footer{width:100%}
+    footer{width: 100%;  background-color:#f2f2f2;display: flex;flex-direction: row;justify-content: space-between;}
 }
 
 
@@ -195,8 +195,7 @@ footer a{color:dimgray; ;}
     #nav_hebergement{border-top:none; border-bottom: 3px solid #0065fc;padding-bottom:20px; margin:0  100px 0 30px;}
 
    /*********les filtres*******/
-   #block{flex-direction: column;align-items: flex-start;justify-content: space-between; }
-   
+   #block{flex-direction: column;align-items: flex-start;justify-content: space-between; }   
    #filtres{height: 140px;flex-direction:column;flex-wrap: wrap; justify-content: space-between;align-content: space-between; padding-left: 0;}
    #filtres li{margin-bottom: 5px;}
    #animaus:nth-child(4){order:3; margin-left: 0;}
@@ -204,7 +203,7 @@ footer a{color:dimgray; ;}
    #romantique:nth-child(3){order:2;margin-left: 0;}  
 
     /******deus section **/
-    main{flex-direction: column;}    
+    main{width: 100%; flex-direction: column;}    
     
     #populaire:nth-child(2){order: 1;}
     #Hebergement:nth-child(1){order:2;}
@@ -217,12 +216,12 @@ footer a{color:dimgray; ;}
     #populaire h2 :nth-child(1){margin-right: 0;justify-self: center;}
     #tete{margin: 0;width: 400px;  display: flex;flex-direction: row;justify-content: space-between;}
 
-    #Hebergement{width: 100vw;background-color: white;}
-    #Hebergement h2{width:400px;justify-content: center;}
-    #contheberg{padding: 20px;  display: flex;flex-direction: column; align-items: center;background-color:white;} 
+    #Hebergement{width: 100%;margin: 20px; background-color: white;}
+    #Hebergement h2{width:400px;justify-self: center;align-self: flex-start;}
+    #contheberg{  display: flex;flex-direction: column; align-items: center;background-color:white;} 
     .carte_hebergement{width:400px;height: 250px; margin: 20px;}
     .img_hebergement { width:390px; height: 140px;}
-
+    
 
     
     #tout{flex-direction: column;align-items: center;}
@@ -233,13 +232,7 @@ footer a{color:dimgray; ;}
     .img_activitesolo, .img_activepartage{  width:400px; height: 200px;}  
 
 
-    footer{padding-left:20px;flex-direction:column;align-items:flex-start;}
-    .block-footer{width: 400px; }
-
-    footer a{color:dimgray; ;}
-    .pied{padding: 5px;display: block; width: 300px;}
-
-    .fin{padding-left: 0;}
+    footer{width: 100%;background-color:#f2f2f2;display: flex;flex-direction: column;justify-content: space-between;}
 
     
 }
