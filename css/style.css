@@ -1,5 +1,5 @@
 *{box-sizing: border-box;}
-body{margin: 0;padding:0;font-family: 'Raleway', sans-serif;font-size: 16px;}
+body{margin: 0;padding:0;  font-family: 'Raleway', sans-serif;font-size: 16px;}
 a,li{text-decoration:none;list-style-type: none; color:#0065FC;}
 p{color:grey;}
 h1{margin:auto;padding-left: 20px; font-size: 27px;font-weight: bold;}
@@ -86,10 +86,10 @@ main{ padding: 10px; display: flex; flex-direction: row;flex-wrap: wrap;justify-
 
 /****************************footer************************/
 
-footer{width: 100%; padding:20px  100px 20px 0;   background-color:#f2f2f2;display: flex;flex-direction: row;justify-content: space-between;}
+footer{width: 100%;height:auto; background-color:#f2f2f2;display: flex;flex-direction: row;justify-content: space-between;}
 h4{font-size: 15px;font-weight: bold;padding-left: 15px; text-transform: capitalize;color: black;}
 footer a{color:dimgray; ;}
-.pied{ width: 280px; padding-left:5px; margin: 10px;}
+.pied{ width:280px; padding-left:5px; margin: 10px;}
 .fin{padding-left: 0;}
 
 
@@ -171,7 +171,7 @@ footer a{color:dimgray; ;}
     
 
     
-    #Activites{width: 100%;display: flex;flex-direction: column;justify-content:space-around; }
+    #Activites{width: 100%; display: flex;flex-direction: column;justify-content:space-around; }
     #tout{width: 100%;height:850px;  flex-direction: column; flex-wrap: wrap;justify-content: space-between;align-items: center;}
     #Activites h3{font-size:14px; font-weight: 700; }   
     .photos{width: 350px;height: 250px;margin-bottom: 10px;}
@@ -179,15 +179,16 @@ footer a{color:dimgray; ;}
     .partager{ width: 350px; height:auto;display:flex;flex-direction: column; justify-content: space-between;}
     .inter{width: 350px;height: 250px;}
     .img_activepartage{ width:350px;height: 200px; }
-
-
-    footer{width: 100%;  background-color:#f2f2f2;display: flex;flex-direction: row;justify-content: space-between;}
+    
+    footer{width: 100%;height:auto;padding: 20px;}
+   
 }
 
 
 
 @media screen and (max-width:768px)
 {
+    
     nav{width: 100%; height: 150px; display: flex;flex-direction: column;flex-wrap: wrap;justify-content: flex-start;}
 
     #two_nav{width: 100%; border-bottom: 3px solid #f2f2f2;margin-left: 0;padding-left: 0; display: flex;flex-direction: row;justify-content: flex-start;}
@@ -203,7 +204,7 @@ footer a{color:dimgray; ;}
    #romantique:nth-child(3){order:2;margin-left: 0;}  
 
     /******deus section **/
-    main{width: 100%; flex-direction: column;}    
+    main{width: 100%; flex-direction: column;justify-content: space-around;align-items: center;}    
     
     #populaire:nth-child(2){order: 1;}
     #Hebergement:nth-child(1){order:2;}
@@ -232,7 +233,7 @@ footer a{color:dimgray; ;}
     .img_activitesolo, .img_activepartage{  width:400px; height: 200px;}  
 
 
-    footer{width: 100%;background-color:#f2f2f2;display: flex;flex-direction: column;justify-content: space-between;}
+    footer{width: 100%; flex-direction: column;}
 
     
 }
