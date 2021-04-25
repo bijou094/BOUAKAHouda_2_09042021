@@ -62,7 +62,7 @@ main{width: 100%;  display: flex; flex-direction: row;flex-wrap: wrap;justify-co
 #populaire{min-width: 34%; padding: 10px;background-color:#f2f2f2;border-radius: 20px 20px 20px 20px;display: flex;flex-direction: column;justify-content: space-evenly;align-items: center;}
 .carte_populaire{width:410px;height: 150px;padding: 5px; background-color:white;border-radius: 20px 20px 20px 20px;box-shadow: 4px  4px  4px 4px rgb(179, 175, 175);display: flex;flex-direction: row;justify-content:space-evenly;} 
 .carte_populaire:hover{ z-index:2;transform: scale(1.3);transition: 0.3s;}
-.img_populaire{ width: 190px;height: 140px;border-radius: 20px 0 0 20px ;}
+.img_populaire{ width: 190px;height: 150px;border-radius: 20px 0 0 20px ;}
 #tete{width:410px;margin: 0; display: flex;flex-direction: row;justify-content: space-between;}
 .fa-chart-line{font-size: 16px; font-weight:900;padding: 20px 20px 0 0;}
 .adroit{ height: auto; margin: 0  0 10px 10px;display: flex;flex-direction: column;justify-content: space-between;}
@@ -211,21 +211,21 @@ footer a{color:dimgray; ;}
     #Activites:nth-child(3){order: 3;flex-direction:column;align-items:center;}    
    
 
-    #populaire{width: 90%;  display: flex;flex-direction: column; align-items: center;background-color: aqua;}    
+    #populaire{width: 90%;  display: flex;flex-direction: column; align-items: center;}    
     .carte_populaire{width: 80%;height: 160px; margin-bottom: 20px;}     
     .img_populaire{width: 50%;height: 160px;}
     #populaire h2 :nth-child(1){margin-right: 0;justify-self: center;}
     #populaire h3{font-size: 14px;} 
     #tete{margin: 0;width: 80%;  display: flex;flex-direction: row;justify-content: space-between;}
 
-    #Hebergement{width: 100%;background-color: rgb(182, 55, 55);align-items: center;}
+    #Hebergement{width: 100%;align-items: center;}
     #Hebergement h2{width:20;justify-self: center;align-self: flex-start;}
     #contheberg{  display: flex;flex-direction: column; align-items: center;background-color:white;} 
     .carte_hebergement{width:80%;height: 250px; margin: 20px;}
     .img_hebergement { width:100%; height: 140px;}
     
 
-    #Activites{width: 90%; align-items: center;background-color: brown;}
+    #Activites{width: 90%; align-items: center;}
     #tout{flex-direction: column;align-items: center;}
     #Activites h3{margin-left: 15px;}  
     .partager{width:100%;height: 100%; margin: 20px;align-items: center; }
