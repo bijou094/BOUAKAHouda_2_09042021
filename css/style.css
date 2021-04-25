@@ -88,8 +88,9 @@ main{width: 100%;  display: flex; flex-direction: row;flex-wrap: wrap;justify-co
 
 footer{ width: 100%; margin: 0; height:auto; background-color:#f2f2f2;display: flex;flex-direction: row;justify-content: space-between;}
 h4{font-size: 15px;font-weight: bold;padding-left: 15px; text-transform: capitalize;color: black;}
-footer a{color:dimgray; ;}
-.pied{ width:230px; padding-left:5px; margin: 10px;}
+footer a{color:dimgray; }
+.block_footer{ width:250px; }
+.pied{padding-left:5px; margin: 10px;}
 .fin{padding-left: 0;}
 
 
@@ -106,7 +107,7 @@ footer a{color:dimgray; ;}
 
     #contheberg{ padding: 10px; border-radius: 2em;display: flex;flex-direction:row;flex-wrap: wrap; justify-content: space-around;}
     .carte_hebergement{ width:190px;height: 170px;padding: 5px;}
-    .img_hebergement{  width: 180px;height: 90px;}
+    .img_hebergement{  width: 190px;height: 90px;}
     .dessous{ height:170px; margin:10px 0 0 15px;text-align: left;}
        
     /*******
@@ -114,7 +115,7 @@ footer a{color:dimgray; ;}
     #populaire{ padding: 10px; align-items: center;}
 
     .carte_populaire{ width:270px;height: 130px;} 
-    .img_populaire{  width:130px;height: 120px;}
+    .img_populaire{  width:130px;height: 130px;}
     #populaire h2{font-size: 16px;}
     #tete{width: 100%;padding: 15px; display: flex;flex-direction: row;justify-content: space-between;}
     .fa-chart-line{font-size: 14px; font-weight:900;padding: 15px 10px 0 0;}
@@ -159,12 +160,13 @@ footer a{color:dimgray; ;}
     main p{font-size: 12px; margin: 0;}  
     #Hebergement{width: 64%;justify-self: flex-start;}   
     .carte_hebergement{ width:210px;height: 180px;}
-    .img_hebergement{  width: 200px;height: 110px;}   
+    .img_hebergement{  width: 210px;height: 110px;}   
 
     
     #populaire{width: 32%;padding: 5px;justify-self: end; display: flex;flex-direction: column;justify-content: space-around; align-items: center;}
     .carte_populaire{width:250px;height: 140px;}   
-    .img_populaire{ width: 110px;height: 130px;}
+    .img_populaire{ width: 110px;height: 140px;}
+    .adroit{ width:140px ;}
     .fa-chart-line{ margin-top: 5px;padding-top: 3px ;padding-right: 0;}
     #tete{width:250px;margin-top: 5px;}
     h2{font-size: 15px; }
@@ -213,12 +215,13 @@ footer a{color:dimgray; ;}
 
     #populaire{width: 90%;  display: flex;flex-direction: column; align-items: center;}    
     .carte_populaire{width: 80%;height: 160px; margin-bottom: 20px;}     
-    .img_populaire{width: 50%;height: 160px;}
+    .img_populaire{width: 40%;height: 160px;}
+    .adroit{width: 60%;}
     #populaire h2 :nth-child(1){margin-right: 0;justify-self: center;}
     #populaire h3{font-size: 14px;} 
     #tete{margin: 0;width: 80%;  display: flex;flex-direction: row;justify-content: space-between;}
 
-    #Hebergement{width: 100%;align-items: center;}
+    #Hebergement{width: 100%;align-items: center;background-color: white;}
     #Hebergement h2{width:20;justify-self: center;align-self: flex-start;}
     #contheberg{  display: flex;flex-direction: column; align-items: center;background-color:white;} 
     .carte_hebergement{width:80%;height: 250px; margin: 20px;}
