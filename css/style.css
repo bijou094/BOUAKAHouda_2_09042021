@@ -48,7 +48,7 @@ main{width: 100%;  display: flex; flex-direction: row;flex-wrap: wrap;justify-co
 .carte_hebergement:hover{ z-index:2;transform: scale(1.3);transition: 0.3s;} 
 
 #Hebergement {width:64%; background-color:#f2f2f2;border-radius: 20px 20px 20px 20px;}
-#contheberg{padding: 10px; border-radius: 2em;display: flex;flex-direction:row;flex-wrap: wrap;justify-content:space-evenly}
+#contheberg{padding: 10px; border-radius: 2em;display: flex;flex-direction:row;flex-wrap: wrap;justify-content:space-around}
 .carte_hebergement{width: 29.5%;height: 260px;padding: 5px; margin-bottom: 30px; background-color:snow;text-align: center;border-radius: 20px 20px 20px 20px;box-shadow: 3px 3px 3px 3px rgb(77, 72, 72);}
 .img_hebergement{  width: 100%;height: 150px; border-radius: 20px 20px 0 0;}
 .dessous{ margin-left: 15px;text-align: left;}
@@ -62,14 +62,14 @@ main{width: 100%;  display: flex; flex-direction: row;flex-wrap: wrap;justify-co
 .img_hebergement{ width: 100%; height: 160px; border-radius: 20px 20px 0 0;}*/
 
 
-.dessous{justify-self: flex-end; margin-left:15px;text-align: left;}
+/*.dessous{justify-self: flex-end; margin-left:15px;text-align: left;}
 #afficher{margin:10px 0 25px 20px; color: black;}
 #afficher a{color: black;  font-weight: 600;font-size: 14px;}
 .nom_prix{padding: 0;margin: 0; align-self: flex-start;}
-.star{padding: 0;margin: 0;align-self: flex-start;}
+.star{padding: 0;margin: 0;align-self: flex-start;}*/
 
 
-#populaire{min-width: 34%; padding: 10px;background-color:#f2f2f2;border-radius: 20px 20px 20px 20px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;}
+#populaire{min-width: 33%; padding: 10px;background-color:#f2f2f2;border-radius: 20px 20px 20px 20px;display: flex;flex-direction: column;justify-content: space-between;align-items: center;}
 .carte_populaire{width:410px;height: 150px;padding: 5px; background-color:white;border-radius: 20px 20px 20px 20px;box-shadow: 3px  3px  3px 3px  rgb(77, 72, 72);display: flex;flex-direction: row;justify-content:space-evenly;} 
 .carte_populaire:hover{ z-index:2;transform: scale(1.3);transition: 0.3s;}
 .img_populaire{ width: 190px;/*height: 150px*/border-radius: 20px 0 0 20px ;}
@@ -141,7 +141,7 @@ h4{
     main p{font-size: 12px; margin: 0;}
 
     #contheberg{ padding: 10px; border-radius: 2em;display: flex;flex-direction:row;flex-wrap: wrap; justify-content: space-around;}
-    .carte_hebergement{ width:190px;height: 170px;padding: 5px;}
+    .carte_hebergement{ width:190px;height: 170px;padding: 5px; margin-bottom: 30px;}
     .img_hebergement{  width: 190px;height: 90px;}
     .dessous{ height:170px; margin:10px 0 0 15px;text-align: left;}
        
@@ -149,7 +149,7 @@ h4{
     Section populaire****/    
     #populaire{ padding: 10px; align-items: center;}
 
-    .carte_populaire{ width:270px;height: 130px;} 
+    .carte_populaire{ width:270px;height: 130px;margin-bottom: 20px;} 
     .img_populaire{  width:130px;height: 130px;}
     #populaire h2{font-size: 16px;}
     #tete{width: 100%;padding: 15px; display: flex;flex-direction: row;justify-content: space-between;}
