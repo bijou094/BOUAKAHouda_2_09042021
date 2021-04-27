@@ -2,7 +2,8 @@
     margin: 0;
     padding:0; 
            
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding:0; 
@@ -12,13 +13,12 @@ body{
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
-   
+    justify-content: space-between;   
 }   
 
 a{
     text-decoration:none;
+    color: #0065fc;
 }
 li{
     list-style-type: none;
@@ -255,6 +255,7 @@ h2{
 .img_hebergement{
     width: 100%; 
     height: 180px;
+    object-fit: cover;
     background-color: snow;
     border-radius: 20px 20px 0px 0px ;
     align-self: flex-start;
@@ -324,13 +325,15 @@ h3{
     justify-content:space-evenly;
 }
 .img_populaire{
+    object-fit: cover;
+    height: 180px;
     width: 50%;
     margin-left: 0;
     border-radius: 20px 0 0 20px;
 }  
 .adroit_populaire{
     width: 50%;
-    padding: 0px 0 5px 10px;
+    padding: 0px 0 5px 5px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -388,8 +391,7 @@ h3{
     margin-bottom: 2px;
     border-radius: 20px 20px 0 0 ;
 }
-#Activites h3{
-    
+#Activites h3{    
     margin:10px 0 0 10px;
 }  
 /*****footer****/
@@ -397,8 +399,7 @@ footer{
     width: 100%;    
     background-color: #f2f2f2; 
     margin-top: 0;  
-    margin-left: 0;
-    
+    margin-left: 0;    
 }
 h4{
     margin-left: 10px;;
@@ -432,10 +433,12 @@ h4{
     /*****modification sur section hébergement***/   
     .carte_hebergement{
         width: 28%;
-        height: 210px;
+        height: 220px;
     }
     .img_hebergement{
-        height: 140px; 
+        height: 140px;
+        width: 100%;
+        object-fit: cover; 
         justify-self:flex-end;       
     }
     .dessous_hebergement .nom_prix{ 
@@ -484,10 +487,12 @@ h4{
         font-size: 20px;
     }
     .img_populaire{
-        width: 48%;        
+        width: 48%;
+        height: 140px;
+        object-fit: cover;        
     }    
     .adroit_populaire  p{
-        font-size: 12px;
+        font-size: 11px;
         margin: 4px;
     }
     #populaire  h3{
@@ -507,9 +512,12 @@ h4{
     .carte_activites{ 
         width: 22%;
         height: 340px;
+        
     }
     .img_activites{
-        height: 320px;
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
         margin-bottom: 2px;
     }
     .carte2_activites{
@@ -517,13 +525,15 @@ h4{
         height: 150px;
     }
     .img2_activites{
-        height: 120px;
+        height: 110px;
+        width: 100%;
+        object-fit: cover;
         margin-bottom: 2px;        
     }
     #Activites h3{
         margin-left: 10px;
         margin-top: 0;
-        font-size: 15px;
+        font-size: 14px;
     }     
     #contener_footer{
         width: 80%;
@@ -614,6 +624,8 @@ h4{
     }
     .img_hebergement{
         height: 120px;
+        width: 100%;
+        object-fit: cover;
         margin-bottom: 2px;
     }
     #Hebergement .star{ 
@@ -646,6 +658,8 @@ h4{
     }
     #tete_populaire{
         width:88%; 
+        height: 120px;
+        object-fit: cover;
         margin: 30px 0 20px 0; 
     }   
     .fa-chart-line{
@@ -653,6 +667,8 @@ h4{
     }
     .img_populaire{
         width: 48%;
+        height: 120px;
+        object-fit: cover;
     }
     .adroit_populaire{
         width: 52%;
@@ -740,6 +756,22 @@ h4{
         align-items: flex-start;
         justify-content: space-between; 
     }   
+    
+    #recherche{
+        content: "\f002";
+        font-family:"Font Awesome 5 Free";
+    }
+      
+      #recherche::after { /* Ceci ne sera pas affiché, */
+                         /* l'élément sera un élément remplacé */
+        content: " (" attr(id) ")";
+      }
+      
+
+    
+    
+                
+    
     #filtres{
         height: 140px;
         flex-direction:column;
