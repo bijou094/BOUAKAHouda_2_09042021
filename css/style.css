@@ -68,6 +68,9 @@ nav {
     padding-top: 20px;
     
 }
+#nav_activa{
+    color: black;
+}
 #nav_sinscrire {
     justify-self: flex-end;
     margin-left: 50px;
@@ -533,6 +536,7 @@ h4{
     #Activites h3{
         margin-left: 10px;
         margin-top: 0;
+        padding-top: 10px;
         font-size: 14px;
     }     
     #contener_footer{
@@ -629,41 +633,61 @@ h4{
         margin-bottom: 2px;
     }
     #Hebergement .star{ 
-        margin: 0px 6px 3px 0;
+        margin: 5px 6px 6px 0;
     }
     .dessous_hebergement p{
-        margin: 4px; 
+        
         font-size: 13px;
+        margin: 8px 6px 6px 0;
     }
     .dessous_hebergement h3{
         font-size: 14px; 
         margin: 4px;
     }
-    .dessous_hebergement {
-        height: 30%; 
-        margin-left: 10px;
+    
+    .dessous_hebergement{
+        justify-self:flex-end;
+        height: 100px;
+        margin-left: 11px;
     }
+    .dessous_hebergement .nom_prix{ 
+        height:40px;
+        margin-left:4px;
+        margin: 0;
+        padding: 0;
+    }
+    
+
+
+
+
+
+
+
+
+
+
     /****************modification section populaire*****/
     #populaire{      
     background-color: #f2f2f2;
     width: 35%;
     align-items:center; 
-    justify-content:stretch;
+    justify-content:flex-start;
     }    
     .carte_populaire{
-        width: 85%;
+        width: 80%;
         height: 130px; 
         padding: 5px; 
         margin: 50px 0 50px 0;
     }
     #tete_populaire{
-        width:88%; 
-        height: 120px;
-        object-fit: cover;
+        width:80%; 
+       
         margin: 30px 0 20px 0; 
     }   
     .fa-chart-line{
-        font-size: 16px;
+        font-size: 17px;
+        
     }
     .img_populaire{
         width: 48%;
@@ -671,8 +695,8 @@ h4{
         object-fit: cover;
     }
     .adroit_populaire{
-        width: 52%;
-        padding: 0px 0 5px 5px;
+        width: 50%;
+        padding: 0px 0 5px 10px;
     }   
     .adroit_populaire  p{
         font-size: 12px;
@@ -684,7 +708,7 @@ h4{
     }
     /********* modification activités******/
     #contener_activites{
-        height:750px; 
+        height:700px; 
         justify-content: space-around;
         align-items: center; 
     }
@@ -694,10 +718,12 @@ h4{
     }
     .carte_activites{
         width: 28%; 
-        height: 280px;
+        height: 300px;
     }
     .img_activites{
         height:250px;
+        width: 100%;
+        object-fit: cover;
         margin-bottom: 5px;
     }
     .carte2_activites{ 
@@ -706,10 +732,13 @@ h4{
     }
     .img2_activites{
         height: 250px;
+        width: 100%;
+        object-fit: cover;
         margin-bottom: 5px;
     }
     #Activites h3{
         font-size: 14px;
+        padding-top: 10px;
         margin-left: 10px;
         margin-top: 0;
     }
@@ -826,20 +855,46 @@ h4{
         align-items: center;
         justify-content: space-evenly;
     }
+    .carte_hebergement{
+        width: 80%;
+        height:310px;
+    }
+    .img_hebergement{
+        height:200px;
+        width: 100%;
+        object-fit: cover;
+    }
+/*****modification section populair********/
+
     #populaire{padding: 0;  
         width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
     } 
-    #tete_populaire{
+    .carte_populaire{
         width: 85%;
-    } 
-    #Activites{
-        display: flex; 
-        flex-direction: column; 
-        justify-content: space-evenly;
+        height: 200px;
+        margin-bottom: 25px;
     }
+    .img_populaire{
+        width: 55%;
+        height: 190px;
+        object-fit: cover;
+        padding: 5px;
+        margin-left: 0;
+    }
+    #tete_populaire{
+        width: 80%; 
+        margin: 10px 0 10px 0; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    } 
+/*****modification section activites********/
     #contener_activites{
         width: 100%;
         height: auto; 
@@ -848,35 +903,58 @@ h4{
         align-items: center;
         justify-content:space-around;
     }
-   
-
-
-    .carte_populaire{width: 80%;height: 200px;margin-bottom: 25px;}
-    .img_populaire{width: 55%;padding: 5px;margin-left: 0;}
-    #tete_populaire{
-        width: 80%; 
-        margin: 10px 0 10px 0; 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: darkcyan;
-        
+    #Activites{
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-evenly;
+    }
+    .carte_activites{
+        width: 80%;
+        height:310px;
+        margin-bottom: 30px;
     } 
-    .carte_hebergement{width: 80%;height:310px;}
-    .img_hebergement{height:200px;}
-
-    .carte_activites{width: 80%;height:310px;margin-bottom: 30px;} 
-    .img_activites{height:260px;}
-    .carte2_activites{width: 80%;height:310px;margin-bottom: 30px;}
-    .img2_activites{height:260px;}
-    .adroit_populaire  p{font-size: 12px; margin: 4px;}
-    .adroit_populaire  h3{font-size: 15px;margin: 4px;}
-    .etoile-bleu { color:#0065FC; font-size: 16px;}
-    .etoile-gris{color: grey; font-size: 16px;}
-    
-    footer{width: 100%;flex-direction: column;align-items: flex-start;}
-    #contener_footer{width: 100%;flex-direction: column;align-items: flex-start;}
+    .img_activites{
+        width: 100%; 
+        height:260px;
+        object-fit: cover;
+    }
+    .carte2_activites{
+        width: 80%;
+        height:310px;
+        margin-bottom: 30px;
+    }
+    .img2_activites{
+        width: 100%;
+        height:260px;
+        object-fit: cover;
+    }
+    .adroit_populaire  p{
+        font-size: 12px;
+         margin: 4px;
+    }
+    .adroit_populaire  h3{        
+        font-size: 15px;
+        margin: 4px;
+    }
+    .etoile-bleu { 
+        color:#0065FC; 
+        font-size: 16px;
+    }
+    .etoile-gris{
+        color: grey; 
+        font-size: 16px;
+    }
+    /*****modification footeur********/
+    footer{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #contener_footer{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
 
 }
