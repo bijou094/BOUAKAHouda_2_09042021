@@ -1,7 +1,6 @@
 *{
     margin: 0;
-    padding:0; 
-           
+    padding:0;            
     box-sizing: border-box;
 }
 body{
@@ -703,7 +702,7 @@ h4{
     }
     .adroit_populaire  h3{
         font-size: 13px;
-        margin: 4px 0 4px 0 ;
+        margin: 4px 0 4px 0px ;
     }
     /********* modification activités******/
     #contener_activites{
@@ -869,7 +868,7 @@ h4{
     }
     .img_populaire{
         width: 55%;
-        height: 200px;
+        height: 190px;
         object-fit: cover;
         padding: 5px;
         margin-left: 0;
