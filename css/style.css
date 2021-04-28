@@ -126,9 +126,11 @@ input{
     border-radius: 0 15px 15px 0;
 }
 #recherche_loup{
+    font-size: 0;
     visibility: collapse;
 
 }
+
 .fa-map-marker-alt{ 
     width: 30px;
     font-size: 14px;
