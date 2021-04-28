@@ -126,12 +126,12 @@ input{
     border-radius: 0 15px 15px 0;
 }
 #recherche_loup{
-    font-size: 0;
+    
     visibility: collapse;
 
 }
 .fa-search{
-    visibility: collapse;
+    font-size: 0;
 }
 .fa-map-marker-alt{ 
     width: 30px;
@@ -790,6 +790,7 @@ h4{
     }
     .fa-search{
         font-size:20px;
+        visibility: visible;
     }
     #recherche_loup{
         visibility: visible; 
