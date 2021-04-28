@@ -115,6 +115,7 @@ input{
     font-weight:600;
 }
 #recherche{
+    visibility: visible;
     padding: 10px;
     letter-spacing: 1px;
     font-weight: 400;
@@ -130,7 +131,7 @@ input{
     visibility: collapse;
 
 }
-.fa-search{
+.loup{
     font-size: 0;
 }
 .fa-map-marker-alt{ 
@@ -788,7 +789,7 @@ h4{
     #recherche{
         visibility: collapse;
     }
-    .fa-search{
+    .loup{
         font-size:20px;
         visibility: visible;
     }
