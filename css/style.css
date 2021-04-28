@@ -130,7 +130,9 @@ input{
     visibility: collapse;
 
 }
-
+.fa-search{
+    visibility: collapse;
+}
 .fa-map-marker-alt{ 
     width: 30px;
     font-size: 14px;
