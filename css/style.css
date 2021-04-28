@@ -790,15 +790,6 @@ h4{
         font-family:"Font Awesome 5 Free";
     }
       
-      #recherche::after { /* Ceci ne sera pas affiché, */
-                         /* l'élément sera un élément remplacé */
-        content: " (" attr(id) ")";
-      }
-      
-
-    
-    
-                
     
     #filtres{
         height: 140px;
