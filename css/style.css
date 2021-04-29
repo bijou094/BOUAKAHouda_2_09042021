@@ -26,11 +26,8 @@ li{
 /*******
 header******/  
 header{
-    padding: 0;
-    
+    padding: 0;    
     justify-content: flex-start;
-      
-    
 }
 /*********
 nav******/
@@ -250,6 +247,7 @@ main{
 }
 h2{
     padding-left: 30px;
+    margin-top: 20px;
 }
 .carte_hebergement{    
     width: 30%;
@@ -357,6 +355,7 @@ h3{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10px;
 }
 #contener_activites{
     width: 100%;
@@ -370,7 +369,8 @@ h3{
 }
 #Activites h2{
     align-self: flex-start; 
-    padding-left: 10px;
+    padding-left: 30px;
+    margin-top: 30px;
 }
 .carte_activites{
     width: 20%;
@@ -413,7 +413,8 @@ footer{
     margin-left: 0;    
 }
 h4{
-    margin-left: 10px;;
+    margin:0 20px 0 10px;
+
 }
 #contener_footer{
     width: 70%;
@@ -458,7 +459,7 @@ h4{
         margin: 0;
         padding: 0;
     }
-    h3{ 
+    #hebergement h3{ 
         margin: 6px 4px 6px 0;
         font-size: 13px;
     }
@@ -491,7 +492,8 @@ h4{
     #tete_populaire{
         width:85%;
     }
-    #populaire h2{
+    h2{
+        margin-top: 20px;
         font-size: 19px;
     }
     .fa-chart-line{
@@ -664,17 +666,6 @@ h4{
         margin: 0;
         padding: 0;
     }
-    
-
-
-
-
-
-
-
-
-
-
     /****************modification section populaire*****/
     #populaire{      
     background-color: #f2f2f2;
@@ -963,8 +954,6 @@ h4{
         flex-direction: column;
         align-items: flex-start;
     }
-
-
 }
 
     
