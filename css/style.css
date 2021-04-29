@@ -293,6 +293,7 @@ h3{
     margin:20px;
 }
 #afficher a {
+    font-weight: 500;
     color:black;
 }
 /******************sectionpopulaire******************/
@@ -342,7 +343,8 @@ h3{
 }  
 .adroit_populaire{
     width: 50%;
-    padding: 0px 0 5px 5px;
+    padding-bottom:5px;
+    margin-left: 7px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -419,6 +421,7 @@ h4{
 #contener_footer{
     width: 70%;
     padding: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content:space-between;  
@@ -444,29 +447,28 @@ h4{
 @media screen and (min-width:992px) and (max-width:1440px){
     /*****modification sur section hébergement***/   
     .carte_hebergement{
-        width: 28%;
+        width: 30%;
         height: 220px;
     }
     .img_hebergement{
-        height: 130px;
+        height: 140px;
         width: 100%;
         object-fit: cover; 
         justify-self:flex-end;       
     }
     .dessous_hebergement .nom_prix{ 
-        height:40px;
-        margin-left:4px;        
+        height:40px;              
         margin: 0;
         padding: 0;
     }
-    #hebergement h3{ 
+    .dessous_hebergement h3{ 
         margin: 6px 4px 6px 0;
-        font-size: 13px;
+        font-size: 14px;
     }
     .dessous_hebergement{
         justify-self:flex-end;
-        height: 30%;
-        margin-left: 15px;
+        height: 25%;
+        margin-left: 10px;
     }
     .dessous_hebergement p{
         font-size: 14px;
@@ -485,7 +487,7 @@ h4{
     }
      /*******modification sur section populaire*****/    
     .carte_populaire{
-        width: 85%;
+        width: 90%;
         height: 150px;
         padding: 5px;
     }
@@ -498,6 +500,7 @@ h4{
     }
     .fa-chart-line{
         font-size: 20px;
+        align-self: flex-end;
     }
     .img_populaire{
         width: 48%;
@@ -505,12 +508,12 @@ h4{
         object-fit: cover;        
     }    
     .adroit_populaire  p{
-        font-size: 11px;
-        margin: 4px;
+        font-size: 13px;
+        
     }
     #populaire  h3{
-        font-size:13px;
-        margin: 4px;
+        font-size:14px;
+        
     }
    /*********modification sur section activités******/
     #contener_activites{
@@ -568,7 +571,7 @@ h4{
     }
     #two_nav {
         margin-left: 0;
-        width: 100%;
+        width: 100%;        
         border-bottom: 3px solid #f2f2f2;
         display: flex;
         flex-direction: row;
@@ -642,6 +645,8 @@ h4{
         object-fit: cover;
         margin-bottom: 2px;
     }
+
+
     #Hebergement .star{ 
         margin: 5px 6px 6px 0;
     }
@@ -685,6 +690,7 @@ h4{
     }   
     .fa-chart-line{
         font-size: 17px;
+        align-self: flex-end;
         
     }
     .img_populaire{
