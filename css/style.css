@@ -26,77 +26,73 @@ li{
 /*******
 header******/  
 header{
-    margin: 20px;    
+    width: 100%;
+    justify-self: center;       
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    background-color: darkmagenta;
-    align-items:flex-start;
+    flex-direction: column;       
+    align-content:space-between ;
+    align-items: flex-start;
    
 }
 /*********
 nav******/
 
-header{
-    padding: 0;    
-    justify-content: flex-start;
-}
-/*********
-nav******/
-
-nav {
+nav { 
+    width: 100%;  
+    padding-top: 20px; 
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-}
-#logo {
-    height: 50px;
-    height: 50px;
-    justify-self: flex-start;
-    align-self: flex-start;
-    margin-left: 0;
-    display: block;
-} 
-#two_nav {
-    width: 300px;
-    margin-left: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row;    
     align-items: center;
-}
-#nav_hebergement {
-    border-top: 3px solid #0065fc;
-    padding-top: 20px;
-    width: 150px;
-    text-align: center;display: block;
-}
-#nav_activites{
-    padding-top: 20px;
     
 }
-#nav_activa{
-    color: black;
+
+#img_logo{
+    width: 80px;
+    height: 50px;
 }
-#nav_sinscrire {
-    justify-self: flex-end;
-    margin-left: 50px;
-    padding: 20px 20px 0 0;
-    display: block;
+
+#logo:nth-child(1){
+    flex: 6;
+    order: 1;    
+} 
+
+#two_nav:nth-child(3) { 
+    
+    order: 2;
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+       
+}
+#nav_sinscrire:nth-child(2){ 
+    padding-left: 0px;
+    order: 3;
+    flex: 1;
+} 
+#nav_hebergement{
+    margin-right: 20px;
+    flex: 1;
+}
+#nav_activites{
+    padding-right: 0;
+    flex: 1;
+    
+    
+    
 
 }
 #nav_activa:hover, #nav_heberg:hover{
-    
-    padding-top: 20px;
+    padding: 20px 20px 0 20px;    
     border-top: 1px solid #0065fc;
     color: #0065FC;
+}
+#nav_activa, #nav_heberg{
+    color: black;
     
 }
 /************bar de recherhe******************/
 form{
     padding-left: 20px;
-
     width: 100%
 }
 h1{
@@ -111,7 +107,7 @@ form p{
     font-size: 17px;
 }
 #input_button{
-    
+    width: 100%;
     height: 45px;
     margin:30px 0 30px 0;
     display: flex;
@@ -587,40 +583,38 @@ h4{
 @media screen and (min-width:768px) and (max-width: 991px){
     
     
-   /*********les filtres*******/
-   nav {
-    width: 80%;
-    height: 135px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-#img_logo {
-    margin-left: 0;
-}
-#two_nav {
-    margin-left: 0;
-    width: 100%;        
-    border-bottom: 3px solid #f2f2f2;
+   /*********les nav*******/
+   nav { 
+    max-width:991px;
+    padding: 20px;
+    padding-left: 0;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-}
-#nav_hebergement {
+    flex-wrap: wrap ;    
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f2f2f2;
+    }
+
+    #logo:nth-child(1) { 
+        min-width: 90%;
+        order: 1;
+    } 
+    #two_nav:nth-child(3) { 
+        padding-top: 20px;
+        order: 3;  
+    }
+    #nav_sinscrire:nth-child(2){
+        order: 2;
+    } 
+    #nav_activa:hover, #nav_heberg:hover{    
     border-top: none;
+    padding: 20px 20px 30px 20px;
     border-bottom: 3px solid #0065fc;
-    padding-bottom: 17px;
-    margin: 0 100px 0 30px;
-}
-#nav_activites {
-    padding-top: 20px;
-}
-#nav_sinscrire {
-    justify-self: flex-end;
-    margin-left: 50px;
-    padding: 20px 20px 0 0;
-}
+    color: #0065FC;
+    }
+/*********les filtres*******/
    #block_form{
        flex-direction: column;
        align-items: flex-start;
@@ -783,42 +777,36 @@ h4{
 
 @media screen and (max-width:768px) {   
 
-    nav {
-        width: 60%;
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-    #two_nav {
-        width: 100%;
-        border-bottom: 3px solid #f2f2f2;
-        margin-left: 0;
+    nav { 
+        max-width:768px;
+        padding: 20px;
         padding-left: 0;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-    }
-    #nav_hebergement {
-        border-top: none;
-        border-bottom: 3px solid #0065fc;
-        padding-bottom: 20px;
-        margin: 0 100px 0 30px;
-    }
-    #nav_activites {
-        padding-top: 20px;
-    }
-    #nav_sinscrire {
-        margin-right: 50px;
-    }
-    #nav_activa:hover, #nav_heberg:hover{
-        border-bottom: 3px solid #0065fc;
-        border-top: none;
+        flex-wrap: wrap ;    
+        align-items: center;
         padding-bottom: 30px;
+        border-bottom: 2px solid #f2f2f2;
+        }
+    
+        #logo:nth-child(1) { 
+            min-width: 70%;
+            order: 1;
+        } 
+        #two_nav:nth-child(3) { 
+            padding-top: 20px;
+            order: 3;  
+        }
+        #nav_sinscrire:nth-child(2){
+            order: 2;
+        } 
+        #nav_activa:hover, #nav_heberg:hover{    
+        border-top: none;
+        padding: 20px 20px 30px 20px;
+        border-bottom: 3px solid #0065fc;
         color: #0065FC;
-        
-    }
+        }
     /**********modification les filtres***********/
     #input_button{
         justify-self: center;
@@ -911,7 +899,7 @@ h4{
     
     /*****modification section hébergement********/
     #Hebergement{ 
-        background-color: chartreuse;
+        
         width: 100%;
         background-color: white;  
     }
@@ -920,7 +908,7 @@ h4{
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
-        justify-content: space-evenly;  background-color: burlywood;
+        justify-content: space-evenly;
     }
     .carte_hebergement{
         width: 80%;
@@ -935,7 +923,7 @@ h4{
 /*****modification section populair********/
 
     #populaire{
-        background-color: aqua;
+        
         padding: 0;  
         width: 100%;        
         flex-direction: column;
@@ -995,7 +983,7 @@ h4{
         display: flex; 
         flex-direction: column; 
         justify-content: space-between;
-        background-color: brown;
+        
     }
     .carte_activites{
         width: 80%;
