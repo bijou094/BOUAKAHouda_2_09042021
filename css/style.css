@@ -556,20 +556,17 @@ h4{
    /*********modification sur section activités******/
     #contener_activites{
         height:400px;
-        justify-content: space-around;
+        align-content: space-around;
         padding-left: 10px;
     }
-    #Activites h3{
-        margin-left: 10px;
-        font-size: 17px;
-    }
+    
     .carte_activites{ 
         width: 22%;
         height: 340px;
         
     }
     .img_activites{
-        height: 300px;
+        height: 290px;
         width: 100%;
         object-fit: cover;
         margin-bottom: 2px;
@@ -585,9 +582,7 @@ h4{
         margin-bottom: 2px;        
     }
     #Activites h3{
-        margin-left: 10px;
-        margin-top: 0;
-        padding-top: 10px;
+        padding-top: 5px;
         font-size: 14px;
     }     
     #contener_footer{
