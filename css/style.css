@@ -40,6 +40,7 @@ nav******/
 nav { 
     width: 100%;  
     padding-top: 20px; 
+    padding-left: 20px;
     display: flex;
     flex-direction: row;    
     align-items: center;
@@ -83,7 +84,7 @@ nav {
 }
 #nav_activa:hover, #nav_heberg:hover{
     padding: 20px 20px 0 20px;    
-    border-top: 1px solid #0065fc;
+    border-top: 3px solid #0065fc;
     color: #0065FC;
 }
 #nav_activa, #nav_heberg{
@@ -585,16 +586,16 @@ h4{
     
    /*********les nav*******/
    nav { 
+       
     max-width:991px;
     padding: 20px;
-    padding-left: 0;
+    padding-left: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap ;    
-    align-items: center;
-    padding-bottom: 30px;
-    border-bottom: 2px solid #f2f2f2;
+    align-items: center;    
+    border-bottom: 3px solid #f2f2f2;
     }
 
     #logo:nth-child(1) { 
@@ -606,11 +607,19 @@ h4{
         order: 3;  
     }
     #nav_sinscrire:nth-child(2){
+       
         order: 2;
     } 
+    #nav_hebergement{
+        margin-right: 5%;
+        flex:1;
+    }
+    #nav_activites{
+        flex: 3;
+    }
     #nav_activa:hover, #nav_heberg:hover{    
     border-top: none;
-    padding: 20px 20px 30px 20px;
+    padding: 20px;
     border-bottom: 3px solid #0065fc;
     color: #0065FC;
     }
@@ -776,18 +785,21 @@ h4{
 /***********media Query petit ecran****************/
 
 @media screen and (max-width:768px) {   
-
+    header{
+        justify-self: center;
+    }
     nav { 
         max-width:768px;
         padding: 20px;
-        padding-left: 0;
+        padding-left: 20px;       
         margin-bottom: 20px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap ;    
         align-items: center;
-        padding-bottom: 30px;
-        border-bottom: 2px solid #f2f2f2;
+        justify-self: center;
+        
+        border-bottom: 3px solid #f2f2f2;
         }
     
         #logo:nth-child(1) { 
@@ -801,17 +813,23 @@ h4{
         #nav_sinscrire:nth-child(2){
             order: 2;
         } 
+        #nav_hebergement{
+            margin-right: 30%;
+            flex:1;
+        }
+        #nav_activites{
+            flex: 3;
+        }
         #nav_activa:hover, #nav_heberg:hover{    
         border-top: none;
-        padding: 20px 20px 30px 20px;
+        padding: 20px;
         border-bottom: 3px solid #0065fc;
         color: #0065FC;
         }
     /**********modification les filtres***********/
     #input_button{
         justify-self: center;
-        margin: 20px;
-        width: 80%;        
+        width: 95%;        
         border: 2px solid #f2f2f2;
         border-radius: 15px;
     }
@@ -821,13 +839,11 @@ h4{
         color: black;
         font-weight: 400;
         padding-left: 15px;
-        
         text-align: justify;
     }
-
-    
     #recherche{
-        visibility: collapse;
+        display: none;
+        
     }
     .loup{
         font-size:20px;
@@ -846,14 +862,12 @@ h4{
         background-color: #0065fc;    
     }
 
-
-
-
-
     #block_form{
+        justify-self: center;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-between; align-items: center; 
+        justify-content: space-between;
+        
     }  
     #filtres{
         height: 140px;
@@ -871,11 +885,12 @@ h4{
     }
     #animaus:nth-child(4){
         order:3; 
-        margin-left: 0;
+        
     }
     #famillial:nth-child(2){
         order: 4;
         margin-left: 0;
+        padding-left: 0;
     }
     #romantique:nth-child(3){
         order:2;
@@ -912,11 +927,11 @@ h4{
     }
     .carte_hebergement{
         width: 80%;
-        height:260px;
+        height:210px;
         margin-bottom: 10px;
     }
     .img_hebergement{
-        height:160px;
+        height:110px;
         width: 100%;
         object-fit: cover;
     }
@@ -969,7 +984,7 @@ h4{
     margin: 20px 0 20px 0;
     }
     #Activites h3{
-        margin:  10px 0 10px 20px ;
+        margin:  10px 0 20px 20px ;
     }
     #contener_activites{
         width: 100%;
@@ -987,23 +1002,23 @@ h4{
     }
     .carte_activites{
         width: 80%;
-        height:260px;
+        height:180px;
         margin-bottom: 30px;
     } 
     .img_activites{
         width: 100%; 
-        height:200px;
+        height:140px;
         object-fit:cover;
         margin-bottom: 0;
     }
     .carte2_activites{
         width: 80%;
-        height:260px;
+        height:180px;
         margin-bottom: 30px;
     }
     .img2_activites{
         width: 100%;
-        height:200px;
+        height:140px;
         object-fit: cover;
     }
     
@@ -1029,7 +1044,7 @@ h4{
         align-items: flex-start;
     }
     .block_footer{
-        margin: 20px;
+        margin: 10px;
     }
     h4{
         margin:0 0 20px  20px;
