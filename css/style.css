@@ -94,10 +94,11 @@ nav {
 /************bar de recherhe******************/
 form{
     padding-left: 20px;
+    margin-bottom: 10px;
     width: 100%
 }
 h1{
-    margin:25px 0 10px 0 ;
+    margin:20px 0 5px 0 ;
     padding-left: 20px;
     font-size: 24px;
     font-weight: bold;
@@ -110,7 +111,7 @@ form p{
 #input_button{
     width: 100%;
     height: 45px;
-    margin:30px 0 30px 0;
+    margin:20px 0 20px 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -123,19 +124,20 @@ input{
     border:none;
     outline: none;
     text-align: justify;
+    
 }
 ::placeholder{
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 13px;
     color:black;
-    font-weight:600;
+    font-weight:700;
 }
 #recherche{
     visibility: visible;
-    width: 110px;
-    padding: 10px;
+    width: 110px;    
+    padding: 13px;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 500;
     border:none;
     outline: none;
     background-color: #0065FC;
@@ -151,16 +153,16 @@ input{
 }
 .fa-map-marker-alt{ 
     width: 50px;
-    font-size: 14px;
+    font-size: 18px;
     border-radius: 15px 0 0 15px;
-    padding:20px;
-    
-    text-align: justify;
+    padding:13px;
+    text-align: center;
     color: black;
     background-color: #f2f2f2;
 }
 /***************les filtre*********/
 #filtres{
+   
     display: flex;
     flex-direction:row;
     justify-content: space-between;
@@ -168,30 +170,31 @@ input{
 #filtres a {
     font-size: 13px;
     margin: 15px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: capitalize;
     color: black;
 }
 #filtres li{
-    border: 1px solid #f2f2f2;
+    border: 1px solid gainsboro;
     border-radius: 4em;
     margin-right: 20px;
 }
 #filtres li:hover{
     background-color:#0065fc;
 }
-span{
+#sp_filt{
     font-size: 14px;
     font-weight: bold;
     text-transform: capitalize;
     color: black;
     margin-right: 30px;
-    margin-bottom: 20px;
+    
 }
 #block_form{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 25px;
 }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
     border: 1px solid #f2f2f2;
@@ -205,12 +208,18 @@ span{
     font-size: 10px;
     border: 1px solid #f2f2f2;
     border-radius: 4em ;
-     padding:10px;
-     margin-right: 5px;
-     text-align: center;
-      color: #0065FC;
-      background-color: #f2f2f2;
+    padding:10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    text-align: center;
+    color: #0065FC;
+    background-color: #f2f2f2;
 } 
+#propos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
 
 /***********contener  main de deus section hébergement et populaire*******/
 main{
@@ -248,16 +257,18 @@ main{
     transition: 0.3s;
 }
 /***********************section hebergement*********/
-#Hebergement{   
+#Hebergement{
+    padding:  20px;   
     background-color:#f2f2f2;
     width: 65%;    
     border-radius: 2em;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
+    align-content:space-around;
 } 
 #contener_hebergement{     
-    padding:  10px 0 20px 0;          
+    padding:  10px 0 10px 0;          
     border-radius: 2em;  
     display: flex;
     flex-direction: row;
@@ -265,7 +276,7 @@ main{
     justify-content: space-around;   
 }
 h2{
-    padding-left: 30px;
+    padding-left: 20px;
     margin-top: 20px;
 }
 .carte_hebergement{    
@@ -309,7 +320,7 @@ h3{
      padding-top: 0;
 }
 #afficher{
-    margin:30px;
+    margin:20px;
 }
 #afficher a {
     font-weight: 700;
@@ -355,7 +366,7 @@ h3{
 }
 .img_populaire{    
     height: 180px;
-    width: 50%;
+    width: 45%;
     object-fit: cover;
     margin-left: 0;
     border-radius: 20px 0 0 20px;
@@ -363,7 +374,7 @@ h3{
 .adroit_populaire{
     width: 50%;
     padding-bottom:5px;
-    margin-left: 7px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -375,7 +386,7 @@ h3{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-content: space-around;
     align-items: center;
     margin-top: 10px;
 }
@@ -425,7 +436,7 @@ h3{
     border-radius: 20px 20px 0 0 ;
 }
 #Activites h3{    
-    margin:10px 0 0 10px;
+    padding: 0 10px 10px 20px;
 }  
 /*****footer****/
 footer{
@@ -435,7 +446,7 @@ footer{
     margin-left: 0;    
 }
 h4{
-    margin:0 20px 0 10px;
+    margin:0 20px 0 20px;
 
 }
 #contener_footer{
@@ -446,6 +457,9 @@ h4{
     flex-direction: row;
     justify-content:space-between;  
     align-items:center; 
+}
+.block_footer{
+    align-self: flex-start;
 }
 .fin{
     margin-left: 0;
@@ -650,16 +664,16 @@ h4{
     }  
     /***********modification main**********/
     h2{
-        padding-top: 10px;
+        /*padding-top: 10px;*/
         font-size: 17px;
     }
     .etoile-bleu { 
         color:#0065FC; 
-        font-size: 13px;
+        font-size: 11px;
     }
     .etoile-gris{
         color: grey; 
-        font-size: 13px;
+        font-size: 11px;
     }
     /********modification section hébergement******/
     #Hebergement{   
@@ -679,22 +693,20 @@ h4{
 
 
     #Hebergement .star{ 
-        margin: 5px 6px 6px 0;
+        margin: 5px 0px 6px 0;
     }
     .dessous_hebergement p{
-        
         font-size: 13px;
-        margin: 8px 6px 6px 0;
+        margin: 8px 0px 6px 0;
     }
     .dessous_hebergement h3{
         font-size: 14px; 
-        margin: 4px;
-    }
-    
+        
+    }    
     .dessous_hebergement{
         justify-self:flex-end;
         height: 100px;
-        margin-left: 11px;
+        margin: 5px 0 0 10px;
     }
     .dessous_hebergement .nom_prix{ 
         height:40px;
@@ -707,34 +719,33 @@ h4{
     background-color: #f2f2f2;
     width: 35%;
     align-items:center; 
-    justify-content:flex-start;
+    align-content:space-between;
     }    
     .carte_populaire{
-        width: 80%;
+        width: 85%;
         height: 130px; 
         padding: 5px; 
-        margin: 50px 0 50px 0;
+        margin: 0px 0 50px 0;
     }
-    #tete_populaire{
-        width:80%;       
-        margin: 30px 0 20px 0; 
-    }   
+    
     .fa-chart-line{
         font-size: 17px;
         align-self: flex-end;
         
     }
     .img_populaire{
-        width: 48%;
+        width: 46%;
         height: 120px;
         object-fit: cover;
     }
     .adroit_populaire{
-        width: 50%;
-        padding: 0px 0 5px 10px;
+        width: 53%;
+        margin-left: 5px;
+        padding-left: 0;
+        padding: 0px 0 5px 8px;
     }   
     .adroit_populaire  p{
-        font-size: 12px;
+        font-size: 11px;
         margin: 4px 0 4px 0 ;
     }
     .adroit_populaire  h3{
@@ -866,14 +877,14 @@ h4{
         justify-self: center;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-between;
+        align-content: space-between;
         
     }  
     #filtres{
         height: 140px;
         flex-direction:column;
         flex-wrap: wrap; 
-        justify-content: space-between;
+        align-content: space-between;
         align-self:flex-start; 
         padding-left: 0;
     }
@@ -882,6 +893,7 @@ h4{
     }
     span{
         align-self: flex-start;
+        margin-bottom: 20px;
     }
     #animaus:nth-child(4){
         order:3; 
@@ -896,13 +908,14 @@ h4{
         order:2;
         margin-left: 0;
     }  
+    
  
     /*********modification main************/
     main{ 
         width: 100%;  
         display: flex;
         flex-direction: column; 
-        justify-content: space-evenly;  
+        align-content: space-around;  
         align-items: center;
     }
     #populaire:nth-child(2){
@@ -927,7 +940,7 @@ h4{
     }
     .carte_hebergement{
         width: 80%;
-        height:210px;
+        height:200px;
         margin-bottom: 10px;
     }
     .img_hebergement{
@@ -984,7 +997,7 @@ h4{
     margin: 20px 0 20px 0;
     }
     #Activites h3{
-        margin:  10px 0 20px 20px ;
+        margin:  5px 0 20px 5px ;
     }
     #contener_activites{
         width: 100%;

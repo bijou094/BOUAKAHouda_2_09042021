@@ -28,15 +28,14 @@
             <form  method="post" action="traitement.php" >
                 <p>En plein centre ville ou on plein nature</p>
                 <div id="input_button">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <label><i class="fas fa-map-marker-alt"></i></label>
                     <input type="search" id="maRecherche" name="maRecherche" placeholder="Marseille, France"  >                    
                     <button id="recherche_loup"><i class="fas fa-search loup"></i></boutton>
                     <button id="recherche" >Rechercher</button>                                       
                 </div>
                 
-                
                 <div id="block_form">
-                    <span>filtres</span>
+                    <span id="sp_filt">filtres</span>
                     <ul id="filtres">                    
                         <li id="economique"><i class="fas fa-money-bill-wave"></i><a href="">économique</a></li>  
                         <li id="famillial"><i  class="fas fa-child" ></i> <a href="">famillial</a></li>  
@@ -44,7 +43,7 @@
                         <li id="animaus"><i class="fas fa-dog" ></i><a href="">animaus autorisés</a></li>                         
                     </ul>                    
                 </div>
-                <p id ="propos"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                <span id ="propos"><i class="fas fa-info"></i><p id="para_info">Plus de 500 logements sont disponibles dans cette ville</p></span>
             </form>    
         </header>
         <main>
